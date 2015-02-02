@@ -10,6 +10,7 @@ html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
+  background-color: $background;
 }
 
 
@@ -19,13 +20,15 @@ html {
 
 
 body{
-  font-family: sans-serif;
+  font-family: $helvetica;
+  color: $text-color;
   @include zero;
   // Hides close button if there is no js
   &.noscript .close-btn,
   &.noscript .toggle-btn {
     display: none;
   }
+
 }
 
 header {
@@ -47,11 +50,11 @@ header {
       display: block;
       padding: .5em 1em;
       text-align: center;
-      border-bottom: 1px solid $light-grey;
+      border-bottom: 1px solid $black;
       text-decoration: none;
     }
     &.first-child a{
-      border-top: 1px solid $light-grey;
+      border-top: 1px solid $black;
     }
   }
 }
@@ -62,7 +65,7 @@ header {
   height: 40px;
   width: 40px;
   i {
-    border: 1px solid $light-grey;
+    border: 1px solid $black;
     padding: .5em;
   }
   span {
